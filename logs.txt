@@ -116,7 +116,9 @@ Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)             ги
 $ git push origin bug2
 
 Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
-$ git checkout bug3                                           се префрла на гранката мастер
+$ git checkout bug3                                           се префрла на гранката буг3
+
+
 Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
 $ git rebase master                     се прави rebase на буг3 спрема гранката мастер
 Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
