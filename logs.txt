@@ -1,0 +1,158 @@
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~ се креира дадотека
+$ mkdir SI_2023_lab1_213190
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~ влегува во датотеката
+$ cd SI_2023_lab1_213190
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 - се инцилијазира со гит директориум.
+$ git init
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git remote add origin https://github.com/drazmoski/-SI_2023_lab1_213190.git - поврзување со лаколен со одалечен репозитуриум
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) се креира датотека и се едитира во нано
+$ nano README.md
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) ставање на датотеката на сцена
+$ git add README.md
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) - правање комит ,зачувување на промените во локалниот репозиториум
+$ git commit -m "Initial commit" 
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) се креира датотека и се едитира во нано
+$ nano SIlab1.java
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) ставање на датотеката на сцена
+$ git add SIlab1.java
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) зачувување на промените во локалниот репозиториум
+$ git commit -m "Add java class"
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) ги прикачува локалните промени на одалечниот  репозиториум
+$ git push origin master
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) се креира гранка
+$ git branch bug1
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) се креира гранка
+$ git branch bug2 
+t
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)се креира гранка
+$ git branch bug3
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master) се префрла на гранка буг1
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug1) се отвара содржина на дадотеката 
+$ nano SIlab1.java
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug1) поставување на промените на сцена
+$ git add SIlab1.java
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug1) зачувување на промените во локалниот репозиториум
+$ git commit -m "Fix wrong loop for reading"
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug1) - се префрла на гранка буг2
+$ git checkout bug2
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug2) -се отвара содржина на дадотеката 
+$ nano SIlab1.java
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug2) 
+$ git add SIlab1.java                                             поставување на промените на сцена
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug2)
+$ git commit -m " Fix wrong condition in filterOddNumbers." зачувување на промените во локалниот репозиториум
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug2)
+$ git checkout bug3                                           се префла на гранка буг3
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ nano SIlab1.java                                               -се отвара содржина на дадотеката 
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git add SIlab1.java                                    поставување на промените на сцена
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git commit -m "Fix method sumEvenNumbers."              зачувување на промените во локалниот репозиториум
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git push origin bug1                                    ги прикачува локалните промени на одалечниот  репозиториум
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git push origin bug2                                     ги прикачува локалните промени на одалечниот  репозиториум
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git push origin bug3                                      ги прикачува локалните промени на одалечниот  репозиториум
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug1)
+$ git checkout master
+Switched to branch 'master'                                се префрла на гранката мастер
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git merge bug1                    Спојување со стратегијата Fast Forward
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)          ги прикачуваме сите промени кои ги иаме направено
+$ git push origin master
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)              ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug1 
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)               ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug3
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)             ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug2
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git merge bug2                                                спојување се изрвшува со "ort"
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)    ги прикачуваме сите промени кои ги иаме направено
+$ git push origin master
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)      ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug1
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)           ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug3
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)             ги прикачуваме сите промени кои ги иаме направено
+$ git push origin bug2
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git checkout bug3                                           се префрла на гранката мастер
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git rebase master                     се прави rebase на буг3 спрема гранката мастер
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (bug3)
+$ git checkout master                      се префрла на гранката мастер
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git merge bug3                    Спојување со стратегијата Fast Forward
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin master                                               ги прикачуваме сите промени кои ги иаме направено
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin bug1                                                  ги прикачуваме сите промени кои ги иаме направено
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin bug2                                              ги прикачуваме сите промени кои ги иаме направено
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push --force origin bug3                                     ги прикачуваме сите промени кои ги иаме направено
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ nano logs.txt                - креираме датотека
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ nano 213190.txt            - креираме датотека
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git add --all - ги додаваме сите датотеки
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git commit -m "final commit"- Правиме зачување на промените
+
+
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin master                                        ги прикачуваме сите промени кои ги иаме направено
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin bug1                                                ги прикачуваме сите промени кои ги иаме направено
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin bug3                                             ги прикачуваме сите промени кои ги иаме направено
+Korisnik@DESKTOP-RH7O966 MINGW64 ~/SI_2023_lab1_213190 (master)
+$ git push origin bug2                                               ги прикачуваме сите промени кои ги иаме направено
+ 
